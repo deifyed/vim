@@ -11,6 +11,9 @@ colorscheme solarized " Use solarized theme // needs to be in runtimepath/colors
 " Indentation
 set shiftwidth=4
 
+" Calendar
+let g:calendar_cache_directory = expand('~/life/calendar')
+
 " Div
 set noerrorbells " Disable error bell (or screen flash) upon error
 set encoding=UTF-8 " Use UTF-8 encoding
