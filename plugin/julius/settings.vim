@@ -12,7 +12,7 @@ colorscheme solarized " Use solarized theme // needs to be in runtimepath/colors
 set shiftwidth=4
 
 " Calendar
-let g:calendar_cache_directory = expand('~/life/calendar')
+let g:calendar_cache_directory = expand('~/life/calendar') " Move storage to
 
 " Div
 set noerrorbells " Disable error bell (or screen flash) upon error
