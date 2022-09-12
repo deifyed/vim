@@ -22,6 +22,9 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', 'do', vim.diagnostic.open_float, bufopts)
+  vim.keymap.set('n', 'dn', vim.diagnostic.goto_next, bufopts)
+  vim.keymap.set('n', 'dp', vim.diagnostic.goto_prev, bufopts)
 end
 
 --- Setup language servers
