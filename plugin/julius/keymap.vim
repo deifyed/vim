@@ -8,11 +8,6 @@ nnoremap <leader>{{ :lua require('telescope.builtin').live_grep()<CR>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-"" FZF
-"nnoremap <silent> <C-f> :Files<CR>
-"nnoremap <silent> <C-g> :GFiles<CR>
-"nnoremap <silent> <Leader>f :Rg<CR>
-
 " Improve window navigation
 map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>
