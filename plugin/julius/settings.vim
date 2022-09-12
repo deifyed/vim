@@ -10,6 +10,7 @@ colorscheme solarized " Use solarized theme // needs to be in runtimepath/colors
 
 " Indentation
 set shiftwidth=4
+set expandtab " Inserts spaces instead of tab
 
 " Div
 set noerrorbells " Disable error bell (or screen flash) upon error
