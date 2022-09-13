@@ -20,7 +20,13 @@ Plug 'mattn/vim-lsp-settings'
 " LSP language addons
 Plug 'ray-x/go.nvim' "; TSInstall go to install parser
 Plug 'ray-x/guihua.lua' "; recommanded if need floating window support
-Plug 'b0o/SchemaStore.nvim' " Contains openapi schema
+
+" Autopair
+Plug 'windwp/nvim-autopairs'
+
+" Airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
