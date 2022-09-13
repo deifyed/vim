@@ -22,17 +22,17 @@ Plug 'ray-x/go.nvim' "; TSInstall go to install parser
 Plug 'ray-x/guihua.lua' "; recommanded if need floating window support
 
 " Autopair
-Plug 'windwp/nvim-autopairs'
+Plug 'windwp/nvim-autopairs' " Automatically close braces/brackets/etc
 
 " Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline' " Status bar
+Plug 'vim-airline/vim-airline-themes' " Status bar themes
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'BurntSushi/ripgrep'
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'nvim-treesitter/nvim-treesitter-context'
+Plug 'nvim-treesitter/nvim-treesitter-context' " Adds function signature as a sticky header
 Plug 'nvim-lua/telescope.nvim'
 
 " FZF
