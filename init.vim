@@ -31,7 +31,7 @@ Plug 'vim-airline/vim-airline-themes' " Status bar themes
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'BurntSushi/ripgrep'
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Improved syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter-context' " Adds function signature as a sticky header
 Plug 'nvim-lua/telescope.nvim'
 
