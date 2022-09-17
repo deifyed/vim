@@ -1,5 +1,26 @@
 let mapleader=" "
 
+" File explorer
+let g:NetrwIsOpen=0
+
+function! ToggleNetrw()
+    if g:NetrwIsOpen
+        let i = bufnr("$")
+        while (i >= 1)
+            if (getbufvar(i, "&filetype") == "netrw")
+                silent exe "bwipeout " . i 
+            endif
+            let i-=1
+        endwhile
+        let g:NetrwIsOpen=0
+    else
+        let g:NetrwIsOpen=1
+        silent Lexplore
+    endif
+endfunction
+
+nnoremap <silent> <A-1> :call ToggleNetrw()<CR>
+
 " Telescope
 nnoremap <silent> <C-f> :lua require('telescope.builtin').find_files()<CR>
 nnoremap <silent> <C-g> :lua require('telescope.builtin').git_files()<CR>
