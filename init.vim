@@ -47,6 +47,8 @@ Plug 'itchyny/calendar.vim'
 Plug 'FooSoft/vim-argwrap' " Multiline / singleline arguments
 Plug 'hashivim/vim-terraform'
 Plug 'posva/vim-vue'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 
 call plug#end()
 
