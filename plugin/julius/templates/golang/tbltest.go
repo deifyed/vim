@@ -2,6 +2,7 @@
                 name string
 	}{
 		{
+                        name: "Should work"
 		},
 	}
 
