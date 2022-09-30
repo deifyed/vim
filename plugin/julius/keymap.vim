@@ -36,6 +36,9 @@ map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 
+" Improve buffer navigation
+map <C-l> :bprev<CR>
+
 nnoremap <silent> <Leader>a :ArgWrap<CR>
 
 " Center cursor in screen when moving
