@@ -41,3 +41,6 @@ nnoremap <silent> <Leader>a :ArgWrap<CR>
 nnoremap j jzz
 nnoremap k kzz
 nnoremap G Gzz
+
+" Golang
+nnoremap <leader>t <cmd>GoTestFunc<CR>
