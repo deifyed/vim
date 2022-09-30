@@ -32,7 +32,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 local servers = {
-    'gopls',
+    'gopls', --- go install golang.org/x/tools/gopls@latest OR :GoInstallBinaries (vim-go)
     'cssls', --- npm i -g vscode-langservers-extracted
     'vls', --- yay vls
 }
