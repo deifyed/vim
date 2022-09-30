@@ -16,6 +16,7 @@ function! ToggleNetrw()
     else
         let g:NetrwIsOpen=1
         silent Lexplore
+	vertical resize 30
     endif
 endfunction
 
