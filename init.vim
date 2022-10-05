@@ -49,6 +49,8 @@ Plug 'hashivim/vim-terraform'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" Themes
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
