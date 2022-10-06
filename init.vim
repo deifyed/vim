@@ -48,6 +48,7 @@ Plug 'FooSoft/vim-argwrap' " Multiline / singleline arguments
 Plug 'hashivim/vim-terraform'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'github/copilot.vim'
 
 " Themes
 Plug 'morhetz/gruvbox'
