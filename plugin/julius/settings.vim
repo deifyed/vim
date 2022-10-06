@@ -17,6 +17,7 @@ set nohlsearch " Do not highlight searches
 set nocompatible " Vim does not need to be Vi compatible
 set hidden " Do not ask to save files when changing buffer
 set colorcolumn=125 " Github max characters in diff view
+set mouse= " Disable mouse
 
 lua << EOF
 require("nvim-autopairs").setup {}
