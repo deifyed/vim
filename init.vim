@@ -53,5 +53,8 @@ Plug 'github/copilot.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 
+" Movement
+Plug 'ggandor/leap.nvim' " Jump on steroids. Like F in vimium
+
 call plug#end()
 
