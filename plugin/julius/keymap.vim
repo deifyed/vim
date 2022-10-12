@@ -49,3 +49,4 @@ nnoremap G Gzz
 
 " Golang
 nnoremap <leader>t <cmd>GoTestFunc<CR>
+nnoremap <leader>i <cmd>GoImports<CR>
