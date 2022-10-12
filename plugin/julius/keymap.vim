@@ -38,6 +38,7 @@ map <leader>l :wincmd l<CR>
 
 " Improve buffer navigation
 map <C-l> :bprev<CR>
+nnoremap <leader>q :bd<CR>
 
 nnoremap <silent> <Leader>a :ArgWrap<CR>
 
