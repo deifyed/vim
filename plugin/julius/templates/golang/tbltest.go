@@ -1,8 +1,8 @@
 	testCases := []struct {
-                name string
+		name string
 	}{
 		{
-                        name: "Should work"
+			name: "Should work",
 		},
 	}
 
@@ -10,6 +10,6 @@
 		tc := tc
 
 		t.Run(tc.name, func(t *testing.T) {
-                        t.Parallel()
+			t.Parallel()
 		})
 	}
