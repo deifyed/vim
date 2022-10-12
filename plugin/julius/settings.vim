@@ -16,7 +16,8 @@ set encoding=UTF-8 " Use UTF-8 encoding
 set nohlsearch " Do not highlight searches
 set nocompatible " Vim does not need to be Vi compatible
 set hidden " Do not ask to save files when changing buffer
-set colorcolumn=125 " Github max characters in diff view
+set colorcolumn=125 " Display vertical bar at certain width. 125 is Github max characters in diff view
+set textwidth=125 " Automatically wrap at certain width. 125 is Github max characters in diff view
 set mouse= " Disable mouse
 
 lua << EOF
