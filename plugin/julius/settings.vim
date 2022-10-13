@@ -7,9 +7,6 @@ set relativenumber " Show previous and coming line numbers relative to current
 " Indentation
 set shiftwidth=4
 
-" Calendar
-let g:calendar_cache_directory = expand('~/life/calendar') " Move storage to
-
 " Div
 set noerrorbells " Disable error bell (or screen flash) upon error
 set encoding=UTF-8 " Use UTF-8 encoding
@@ -19,10 +16,6 @@ set hidden " Do not ask to save files when changing buffer
 set colorcolumn=125 " Display vertical bar at certain width. 125 is Github max characters in diff view
 set textwidth=125 " Automatically wrap at certain width. 125 is Github max characters in diff view
 set mouse= " Disable mouse
-
-lua << EOF
-require("nvim-autopairs").setup {}
-EOF
 
 " Colors
 set background=dark " 

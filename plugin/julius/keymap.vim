@@ -3,6 +3,7 @@ let mapleader=" "
 " File explorer
 let g:NetrwIsOpen=0
 
+" Toggles treeview on/off
 function! ToggleNetrw()
     if g:NetrwIsOpen
         let i = bufnr("$")
@@ -39,8 +40,6 @@ map <leader>l :wincmd l<CR>
 " Improve buffer navigation
 map <C-l> :bprev<CR>
 nnoremap <leader>q :bd<CR>
-
-nnoremap <silent> <Leader>a :ArgWrap<CR>
 
 " Center cursor in screen when moving
 nnoremap j jzz
