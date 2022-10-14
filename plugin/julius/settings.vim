@@ -16,6 +16,7 @@ set hidden " Do not ask to save files when changing buffer
 set colorcolumn=125 " Display vertical bar at certain width. 125 is Github max characters in diff view
 set textwidth=125 " Automatically wrap at certain width. 125 is Github max characters in diff view
 set mouse= " Disable mouse
+set clipboard+=unnamedplus " Copy to system clipboard
 
 " Colors
 set background=dark " 
