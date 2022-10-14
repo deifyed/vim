@@ -35,7 +35,7 @@ local servers = {
     'gopls', --- go install golang.org/x/tools/gopls@latest OR :GoInstallBinaries (vim-go)
     'cssls', --- npm i -g vscode-langservers-extracted
     'vls', --- yay vls
-    'terraform_lsp', --- yay terraform-ls
+    'terraformls', --- yay terraform-ls
 }
 
 for _, lsp in ipairs(servers) do
