@@ -22,9 +22,6 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'ray-x/go.nvim' "; TSInstall go to install parser
 Plug 'ray-x/guihua.lua' "; recommanded if need floating window support
 
-" Autopair
-Plug 'windwp/nvim-autopairs' " Automatically close braces/brackets/etc
-
 " Airline
 Plug 'vim-airline/vim-airline' " Status bar
 Plug 'vim-airline/vim-airline-themes' " Status bar themes
