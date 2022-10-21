@@ -28,8 +28,7 @@ local on_attach = function(client, bufnr)
 end
 
 --- Setup language servers
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local servers = {
     'gopls', --- go install golang.org/x/tools/gopls@latest OR :GoInstallBinaries (vim-go)
