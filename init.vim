@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp' " Autocomplete
 Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'zbirenbaum/copilot-cmp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'prabirshrestha/vim-lsp'
@@ -48,7 +49,7 @@ Plug 'FooSoft/vim-argwrap' " Multiline / singleline arguments
 Plug 'hashivim/vim-terraform'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'github/copilot.vim'
+Plug 'zbirenbaum/copilot.lua'
 
 " Themes
 Plug 'morhetz/gruvbox'
