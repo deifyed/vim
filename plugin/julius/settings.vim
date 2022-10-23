@@ -5,7 +5,6 @@ set number " Show current line number
 set relativenumber " Show previous and coming line numbers relative to current
 
 " Indentation
-autocmd FileType go setlocal tabstop=2 shiftwidth=2
 set autoindent " Copy indent from current line when starting new line
 set noexpandtab " Disable using appropriate number of spaces to insert a TAB
 set tabstop=2 " Number of spaces that a TAB should count for
