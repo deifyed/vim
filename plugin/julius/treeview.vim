@@ -16,12 +16,16 @@ function! ToggleNetrw()
         let g:NetrwIsOpen=0
     else
         let g:NetrwIsOpen=1
-				let g:netrw_liststyle=3
-				let g:netrw_list_hide=ghregex
-				let g:netrw_banner=0
-				let g:netrw_browse_split=4
-        silent Lexplore
-	vertical resize 40
+				let g:netrw_liststyle=3 " Enable visual tree in treeview
+				let g:netrw_list_hide=ghregex " Hide dotfiles
+				let g:netrw_banner=0 " Hide banner
+				let g:netrw_browse_split=4 " Control action when opening a file
+
+        silent Lexplore " Activate treeview
+
+				vertical resize 40 " Resize
+
+				wincmd l " Move back to the original window
     endif
 endfunction
 
