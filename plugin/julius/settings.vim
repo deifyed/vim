@@ -1,5 +1,3 @@
-let mapleader=" "
-
 " Line numbering
 set number " Show current line number
 set relativenumber " Show previous and coming line numbers relative to current
