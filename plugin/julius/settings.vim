@@ -18,6 +18,7 @@ set colorcolumn=125 " Display vertical bar at certain width. 125 is Github max c
 set textwidth=125 " Automatically wrap at certain width. 125 is Github max characters in diff view
 set mouse= " Disable mouse
 set clipboard+=unnamedplus " Copy to system clipboard
+set ignorecase " Ignore case when searching
 
 " Colors
 set background=dark " 
