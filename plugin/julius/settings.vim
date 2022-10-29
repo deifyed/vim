@@ -41,3 +41,5 @@ if (empty($TMUX))
   endif
 endif
 
+hi clear error
+highlight error gui=bold guifg=#cc241d
