@@ -1,32 +1,27 @@
 " File explorer
 let g:NetrwIsOpen=0
 
-" Toggles treeview on/off
 function! ToggleNetrw()
+	if g:NetrwIsOpen == 0
+		" Hide dotfiles by default
 		let ghregex='\(^\|\s\s\)\zs\.\S\+,build'
+		let g:netrw_list_hide=ghregex
 
-    if g:NetrwIsOpen
-        let i = bufnr("$")
-        while (i >= 1)
-            if (getbufvar(i, "&filetype") == "netrw")
-                silent exe "bwipeout " . i 
-            endif
-            let i-=1
-        endwhile
-        let g:NetrwIsOpen=0
-    else
-        let g:NetrwIsOpen=1
-				let g:netrw_liststyle=3 " Enable visual tree in treeview
-				let g:netrw_list_hide=ghregex " Hide dotfiles
-				let g:netrw_banner=0 " Hide banner
-				let g:netrw_browse_split=4 " Control action when opening a file
+		let g:netrw_liststyle=3 " Enable visual tree in treeview
+		let g:netrw_banner=0 " Hide banner
+		let g:netrw_browse_split=4 " Control action when opening a file
+		let g:netrw_altv = 1
 
-        silent Lexplore " Activate treeview
+		silent Lexplore " Toggle open treeview
 
-				vertical resize 40 " Resize
+		vertical resize 40 " Resize treeview
 
-				wincmd l " Move back to the original window
-    endif
+		wincmd l " Move back to the original window
+		let g:NetrwIsOpen=1
+	else
+		silent Lexplore " Toggle close treeview
+		let g:NetrwIsOpen=0
+	endif
 endfunction
 
 nnoremap <silent> <A-1> :call ToggleNetrw()<CR>
