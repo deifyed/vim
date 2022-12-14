@@ -29,8 +29,8 @@ nnoremap <silent> <A-1> :call ToggleNetrw()<CR>
 augroup netrw
 		autocmd!
 		" Automatically open netrw when vim starts
-		autocmd VimEnter * call ToggleNetrw()
+		"autocmd VimEnter * call ToggleNetrw()
 		" Automatically close netrw if it's the only window left
-		autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
+		"autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
 augroup END
 
