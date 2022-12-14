@@ -1,10 +1,10 @@
 let mapleader=" "
 
 " Telescope
-nnoremap <silent> <C-f> :lua require('telescope.builtin').find_files()<CR>
-nnoremap <silent> <C-g> :lua require('telescope.builtin').git_files()<CR>
-nnoremap <silent> <C-b> :lua require('telescope.builtin').buffers()<CR>
-nnoremap <leader>{{ :lua require('telescope.builtin').live_grep()<CR>
+nnoremap <silent> <C-f> <cmd>Telescope find_files<CR>
+nnoremap <silent> <C-g> <cmd>Telescope git_files<CR>
+nnoremap <silent> <C-b> <cmd>Telescope buffers<CR>
+nnoremap <leader>{{ <cmd>Telescope live_grep<CR>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
@@ -15,7 +15,8 @@ map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 
 " Improve buffer navigation
-map <C-l> :bprev<CR>
+map <C-h> :bprevious<CR>
+map <C-l> :bnext<CR>
 nnoremap <leader>q :bd<CR>
 
 " Center cursor in screen when moving
