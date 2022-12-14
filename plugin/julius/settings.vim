@@ -20,6 +20,9 @@ set mouse= " Disable mouse
 set clipboard+=unnamedplus " Copy to system clipboard
 set ignorecase " Ignore case when searching
 
+set wildmenu " Enable wildmenu
+set wildmode=longest:full,full " Enable wildmenu
+
 " Colors
 set background=dark " 
 "colorscheme solarized " Use solarized theme // needs to be in runtimepath/colors
