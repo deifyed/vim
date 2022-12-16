@@ -14,10 +14,14 @@ map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 
-" Improve buffer navigation
+" Buffers
+"" Improve buffer navigation
 map <C-h> :bprevious<CR>
 map <C-l> :bnext<CR>
 nnoremap <leader>q :bd<CR>
+"" Close all except current
+command! BufOnly execute '%bdelete|edit #|bd #|normal `"'
+nnoremap <C-w> :BufOnly<CR>
 
 " Center cursor in screen when moving
 nnoremap j jzz
