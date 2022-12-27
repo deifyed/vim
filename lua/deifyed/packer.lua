@@ -7,27 +7,37 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
-	use({
+    -- Navigation
+	use({ -- Navigate project files
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	})
+	use('ThePrimeagen/harpoon') -- Mark and navigate buffers
 
-	use({
+    -- Colors
+	use({ -- Colorscheme
 		'morhetz/gruvbox',
 		as = 'gruvbox',
 		config = function()
 			vim.cmd('colorscheme gruvbox')
 		end
 	})
+	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- Syntax highlighting
 
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('nvim-treesitter/playground')
-	use('ThePrimeagen/harpoon')
-	use('mbbill/undotree')
-	use('tpope/vim-fugitive')
+    -- Div
+	use('mbbill/undotree') -- Treat undo history as git
+	use('tpope/vim-fugitive') -- Git interface
+    use('FooSoft/vim-argwrap') -- Multiline / singleline arguments
+    use({ -- Github Copilot
+        'zbirenbaum/copilot.lua',
+        requires = {
+            {'zbirenbaum/copilot-cmp'},
+        }
+    })
 
-	use({
+    -- Personal
+	use({ -- Organize information
         'vimwiki/vimwiki',
         config = function()
             vim.g.vimwiki_list = {{
@@ -35,7 +45,9 @@ return require('packer').startup(function(use)
             }}
         end
     })
+    use('itchyny/calendar.vim') -- Organize events
 
+    -- LSP
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
