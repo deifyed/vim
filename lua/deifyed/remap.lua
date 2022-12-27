@@ -10,7 +10,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Disable something
 vim.keymap.set("n", "Q", "<nop>")
 
--- Buffer navigation
+-- Buffer handling
 vim.keymap.set("n", "<leader>q", function()
     vim.api.nvim_buf_delete(0, {})
 end)
