@@ -1,3 +1,2 @@
 require("deifyed.remap")
-
-print("hello from deifyed")
+require("deifyed.set")
