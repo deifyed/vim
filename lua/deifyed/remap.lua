@@ -14,3 +14,12 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>q", function()
     vim.api.nvim_buf_delete(0, {})
 end)
+vim.keymap.set("n", "<leader>w", function()
+    local currentBuffer = vim.api.nvim_buf_get_name(0)
+
+    for _, buffer in ipairs(vim.api.nvim_list_bufs()) do
+        vim.api.nvim_buf_delete(buffer, {})
+    end
+
+    vim.api.nvim_command("edit " .. currentBuffer)
+end)
