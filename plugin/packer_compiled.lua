@@ -195,6 +195,11 @@ _G.packer_plugins = {
     path = "/home/deifyed/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/deifyed/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   vimwiki = {
     config = { "\27LJ\2\nt\0\0\6\0\t\0\0146\0\0\0009\0\1\0004\1\3\0005\2\a\0006\3\3\0009\3\4\3'\5\5\0B\3\2\2'\4\6\0&\3\4\3=\3\b\2>\2\1\1=\1\2\0K\0\1\0\tpath\1\0\0\15/life/wiki\tHOME\vgetenv\aos\17vimwiki_list\6g\bvim\0" },
     loaded = true,
@@ -204,14 +209,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: gruvbox
-time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
-time([[Config for gruvbox]], false)
 -- Config for: vimwiki
 time([[Config for vimwiki]], true)
 try_loadstring("\27LJ\2\nt\0\0\6\0\t\0\0146\0\0\0009\0\1\0004\1\3\0005\2\a\0006\3\3\0009\3\4\3'\5\5\0B\3\2\2'\4\6\0&\3\4\3=\3\b\2>\2\1\1=\1\2\0K\0\1\0\tpath\1\0\0\15/life/wiki\tHOME\vgetenv\aos\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
 time([[Config for vimwiki]], false)
+-- Config for: gruvbox
+time([[Config for gruvbox]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
+time([[Config for gruvbox]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
