@@ -47,6 +47,10 @@ return require('packer').startup(function(use)
 		end
 	})
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- Syntax highlighting
+    use({
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    })
 
     -- Div
 	use('mbbill/undotree') -- Treat undo history as git
@@ -58,6 +62,10 @@ return require('packer').startup(function(use)
             {'zbirenbaum/copilot-cmp'},
         }
     })
+    use({
+    'glacambre/firenvim',
+    run = function() vim.fn['firenvim#install'](0) end
+    })
 
     -- Personal
 	use({ -- Organize information
@@ -68,7 +76,7 @@ return require('packer').startup(function(use)
             }}
         end
     })
-    use('itchyny/calendar.vim') -- Organize events
+    use('itchyny/calendar.vim')
 
     -- Languages
     use({
