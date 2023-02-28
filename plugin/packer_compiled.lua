@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/deifyed/.local/share/nvim/site/pack/packer/start/copilot.lua",
     url = "https://github.com/zbirenbaum/copilot.lua"
   },
+  ["editorconfig-vim"] = {
+    loaded = true,
+    path = "/home/deifyed/.local/share/nvim/site/pack/packer/start/editorconfig-vim",
+    url = "https://github.com/editorconfig/editorconfig-vim"
+  },
   firenvim = {
     loaded = true,
     path = "/home/deifyed/.local/share/nvim/site/pack/packer/start/firenvim",
