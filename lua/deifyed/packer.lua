@@ -53,6 +53,7 @@ return require('packer').startup(function(use)
     })
 
     -- Div
+    use('editorconfig/editorconfig-vim') -- EditorConfig support
 	use('mbbill/undotree') -- Treat undo history as git
 	use('tpope/vim-fugitive') -- Git interface
     use('FooSoft/vim-argwrap') -- Multiline / singleline arguments
