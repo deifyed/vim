@@ -54,6 +54,7 @@ return require('packer').startup(function(use)
 
     -- Div
     use('editorconfig/editorconfig-vim') -- EditorConfig support
+    use('prettier/vim-prettier', { run = 'yarn install --frozen-lockfile --production' }) -- Prettier support
 	use('mbbill/undotree') -- Treat undo history as git
 	use('tpope/vim-fugitive') -- Git interface
     use('FooSoft/vim-argwrap') -- Multiline / singleline arguments
@@ -62,10 +63,6 @@ return require('packer').startup(function(use)
         requires = {
             {'zbirenbaum/copilot-cmp'},
         }
-    })
-    use({
-    'glacambre/firenvim',
-    run = function() vim.fn['firenvim#install'](0) end
     })
 
     -- Personal
